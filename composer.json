@@ -2,7 +2,7 @@
   "name": "cyneek/yii2-comments",
   "description": "Comments module for Yii2",
   "type": "yii2-extension",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": ["yii2", "extension"],
   "license": "MIT",
   "authors": [
