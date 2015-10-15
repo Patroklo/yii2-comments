@@ -2,15 +2,15 @@
 
 namespace cyneek\comments\models;
 
+use yii2mod\behaviors\PurifyBehavior;
+use cyneek\comments\models\enums\CommentStatus;
+use cyneek\comments\Module;
 use Yii;
 use yii\behaviors\BlameableBehavior;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
-use cyneek\behaviors\PurifyBehavior;
-use cyneek\comments\models\enums\CommentStatus;
-use cyneek\comments\Module;
 
 /**
  * Class CommentModel

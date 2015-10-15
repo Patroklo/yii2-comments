@@ -14,7 +14,7 @@ class CommentAsset extends AssetBundle
     /**
      * @inheritdoc
      */
-    public $sourcePath = '@vendor/yii2mod/yii2-comments/assets';
+    public $sourcePath = '@vendor/cyneek/yii2-comments/assets';
 
     /**
      * @inheritdoc

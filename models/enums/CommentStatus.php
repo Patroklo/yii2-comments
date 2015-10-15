@@ -2,7 +2,7 @@
 
 namespace cyneek\comments\models\enums;
 
-use cyneek\enum\helpers\BaseEnum;
+use yii2mod\enum\helpers\BaseEnum;
 
 /**
  * Class CommentStatus

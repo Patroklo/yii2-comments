@@ -5,7 +5,6 @@ namespace cyneek\comments\widgets;
 use Yii;
 use yii\base\InvalidConfigException;
 use yii\base\Widget;
-use yii\data\ActiveDataProvider;
 use yii\data\ArrayDataProvider;
 use yii\helpers\Json;
 use cyneek\comments\models\CommentModel;

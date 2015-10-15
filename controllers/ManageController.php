@@ -9,7 +9,6 @@ use yii\web\NotFoundHttpException;
 use cyneek\comments\models\CommentModel;
 use cyneek\comments\models\CommentSearchModel;
 use cyneek\comments\Module;
-use cyneek\editable\EditableAction;
 
 /**
  * Manage comments in admin panel
@@ -43,22 +42,6 @@ class ManageController extends Controller
                     'delete' => ['post'],
                 ],
             ],
-        ];
-    }
-
-    /**
-     * Declares external actions for the controller.
-     * This method is meant to be overwritten to declare external actions for the controller.
-     * @return array
-     */
-    public function actions()
-    {
-        return [
-            'edit-comment' => [
-                'class' => EditableAction::className(),
-                'modelClass' => CommentModel::className(),
-                'forceCreate' => FALSE
-            ]
         ];
     }
 
