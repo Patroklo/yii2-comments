@@ -67,7 +67,7 @@ class DefaultController extends Controller
             $actionType = 'update';
         }
 
-        $entity = urldecode(Yii::$app->getRequest()->post('entityData'));
+        $entity = base64_decode(Yii::$app->getRequest()->post('entityData'));
 
         /* @var $module Module */
         $module = Yii::$app->getModule(Module::$name);

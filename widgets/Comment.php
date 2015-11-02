@@ -164,7 +164,7 @@ class Comment extends Widget
         $commentModel->entityId = $this->entityId;
 
         //Encrypt entity and entityId values
-        $this->encryptedEntity = urlencode(Yii::$app->getSecurity()->encryptByKey(Json::encode([
+        $this->encryptedEntity = base64_encode(Yii::$app->getSecurity()->encryptByKey(Json::encode([
             'entity' => $this->entity,
             'entityId' => $this->entityId,
             'maxLevel' => $this->maxLevel,
