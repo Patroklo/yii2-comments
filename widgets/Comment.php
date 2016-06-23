@@ -175,7 +175,7 @@ class Comment extends Widget
             'nestedBehavior' => $this->nestedBehavior
         ]), $module::$name));
 
-        $query = CommentModel::find()
+        $query = $commentModel::find()
             ->where(['entity' => $this->entity, 'entityId' => $this->entityId]);
 
         if ($this->nestedBehavior === TRUE)
